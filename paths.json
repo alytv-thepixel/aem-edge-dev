@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/alytv-aem-eds-site/:/",
-    "/content/alytv-aem-eds-site/configuration:/.helix/config.json",
-    "/content/alytv-aem-eds-site/metadata:/metadata.json"
+    "/content/alytv-eds-site/:/",
+    "/content/alytv-eds-site/configuration:/.helix/config.json",
+    "/content/alytv-eds-site/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/alytv-aem-eds-site/"
+    "/content/alytv-eds-site/"
   ]
 }
