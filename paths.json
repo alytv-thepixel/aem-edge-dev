@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/alytv-eds-devsite/:/",
-    "/content/alytv-eds-devsite/configuration:/.helix/config.json",
-    "/content/alytv-eds-devsite/metadata:/metadata.json"
+    "/content/aem-edge-dev/:/",
+    "/content/aem-edge-dev/configuration:/.helix/config.json",
+    "/content/aem-edge-dev/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/alytv-eds-devsite/"
+    "/content/aem-edge-dev/"
   ]
 }
