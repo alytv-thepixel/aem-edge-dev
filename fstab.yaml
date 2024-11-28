@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p33329-e1178938.adobeaemcloud.com/bin/franklin.delivery/alytv-thepixel/alytv-aem-eds-site/main"
+    url: "https://author-p33329-e1178938.adobeaemcloud.com/bin/franklin.delivery/alytv-thepixel/aem-edge-dev/main"
     type: "markup"
     suffix: ".html"
