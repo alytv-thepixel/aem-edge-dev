@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/alytv-eds-devsite/:/",
+    "/content/alytv-eds-devsite/configuration:/.helix/config.json",
+    "/content/alytv-eds-devsite/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/alytv-eds-devsite/"
   ]
 }
