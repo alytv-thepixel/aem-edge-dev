@@ -191,27 +191,46 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "background_image",
         "label": "Background Image",
         "multi": false
       },
       {
         "component": "text",
-        "name": "pretitle",
+        "name": "background_imageAlt",
+        "value": "",
+        "label": "Image Alt",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "foreground_pretitle",
         "value": "",
         "label": "Pre Title",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "foreground_title",
         "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "description",
+        "component": "select",
+        "name": "foreground_titleType",
+        "value": "h3",
+        "label": "Title Type",
+        "valueType": "string",
+        "options": [
+          {"name": "h2","value": "h2"},
+          {"name": "h3","value": "h3"},
+          {"name": "h4","value": "h4"}
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "foreground_description",
         "value": "",
         "label": "Description",
         "valueType": "string"
