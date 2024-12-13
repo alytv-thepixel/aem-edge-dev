@@ -184,38 +184,5 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "teaser",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Background Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "pretitle",
-        "value": "",
-        "label": "Pre Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "value": "",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "description",
-        "value": "",
-        "label": "Description",
-        "valueType": "string"
-      }
-    ]
   }
 ]
