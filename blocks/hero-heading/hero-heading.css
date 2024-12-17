@@ -1,0 +1,46 @@
+.hero-heading {
+  padding: .5rem 1rem;
+  width: auto;
+  margin-top: 32px;
+  margin-bottom: 36px;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    width: 16px;
+    height: 32px;
+    left: 100%;
+    right: -1rem;
+    top: -32px;
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  &::after {
+    width: 25px;
+    height: 36px;
+    left: -25px;
+    bottom: -36px;
+    content: "";
+    position: absolute;
+    display: block;
+  }
+
+  h1 {
+    color: var(--rsm-white);
+    margin: 0;
+  }
+
+  &.rsm-blue-bg {
+    &::before, &::after {
+      background-color: var(--rsm-blue);
+    }
+  }
+
+  &.rsm-green-bg {
+    &::before, &::after {
+      background-color: var(--rsm-green);
+    }
+  }
+}

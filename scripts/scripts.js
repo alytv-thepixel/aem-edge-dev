@@ -1,4 +1,5 @@
 import {
+  sampleRUM,
   loadHeader,
   loadFooter,
   decorateButtons,
@@ -11,6 +12,16 @@ import {
   loadSections,
   loadCSS,
 } from './aem.js';
+
+import loadStyleGuide from './styleguide.js';
+
+/**
+ * @param {string} innerHtml
+ * @returns {string}
+ */
+export function decodeBrElement(innerHtml) {
+  return innerHtml.replaceAll('&lt;br&gt;', '<br>');
+}
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -99,6 +110,8 @@ async function loadEager(doc) {
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
+  sampleRUM.enhance();
+
   try {
     /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
     if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
@@ -123,6 +136,9 @@ async function loadLazy(doc) {
 
   loadHeader(doc.querySelector('header'));
   loadFooter(doc.querySelector('footer'));
+  if (window.location.pathname === '/style-guide') {
+    loadStyleGuide();
+  }
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
@@ -136,6 +152,7 @@ function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
   window.setTimeout(() => import('./delayed.js'), 3000);
   // load anything that can be postponed to the latest here
+  import('./sidekick.js').then(({ initSidekick }) => initSidekick());
 }
 
 async function loadPage() {

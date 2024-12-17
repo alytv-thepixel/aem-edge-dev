@@ -1,0 +1,58 @@
+.primary-colours {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0 0 5px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.colour-box {
+  min-height: 104px;
+}
+
+.colour-box-small {
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+
+.opacity-container {
+  margin-top: 30px;
+}
+
+@media (width >= 900px) {
+  .primary-colours {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+
+    ul {
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .col-1 {
+      flex: 1 1 640px;
+    }
+
+    .col-2 {
+      flex: 1 1 310px;
+    }
+
+    .col-3 {
+      flex: 1 1 150px;
+    }
+
+    li {
+      max-width: 150px;
+      flex: 1 1 150px;
+    }
+  }
+}
