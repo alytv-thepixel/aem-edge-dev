@@ -19,6 +19,16 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  /* rsm colours */
+  --rsm-white: #FFF;
+  --rsm-blue: #009CDE;
+  --rsm-green: #3f9C35;
+  --rsm-mid-grey: #888B8D;
+  --rsm-dark-grey: #63666A;
+  --rsm-midnight-blue: #00153D;
+  --rsm-light-grey: #CCCFCF;
+  --text-grey: #515356;
+
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
@@ -37,7 +47,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: auto;
 }
 
 /* fallback fonts */
@@ -254,4 +264,65 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.midnight-blue-bg {
+  background-color: #051D3B;
+}
+
+.hidden {
+  display: none;
+}
+
+/* rsm background colour classes */
+.rsm-blue-bg {
+  background-color: var(--rsm-blue);
+}
+
+.rsm-green-bg {
+  background-color: var(--rsm-green);
+}
+
+.rsm-mid-grey-bg {
+  background-color: var(--rsm-mid-grey);
+}
+
+.rsm-dark-grey-bg {
+  background-color: var(--rsm-dark-grey);
+}
+
+.rsm-midnight-blue-bg {
+  background-color: var(--rsm-midnight-blue);
+}
+
+.rsm-light-grey-bg {
+  background-color: var(--rsm-light-grey);
+}
+
+.text-grey-bg {
+  background-color: var(--text-grey);
+}
+
+.op-80 {
+  opacity: 0.8;
+}
+
+.op-60 {
+  opacity: 0.6;
+}
+
+.op-40 {
+  opacity: 0.4;
+}
+
+.op-20 {
+  opacity: 0.2;
 }
