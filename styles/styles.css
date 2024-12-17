@@ -215,6 +215,8 @@ button:focus {
   cursor: pointer;
 }
 
+a.button:disabled,
+a.button:disabled:hover,
 button:disabled,
 button:disabled:hover {
   background-color: var(--button-disabled-bg);
