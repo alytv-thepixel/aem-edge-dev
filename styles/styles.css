@@ -11,23 +11,31 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-
   /* rsm colours */
   --rsm-white: #FFF;
   --rsm-blue: #009CDE;
-  --rsm-green: #3f9C35;
+  --rsm-primary-green: #3f9C35;
   --rsm-mid-grey: #888B8D;
   --rsm-dark-grey: #63666A;
   --rsm-midnight-blue: #00153D;
   --rsm-light-grey: #CCCFCF;
   --text-grey: #515356;
+
+  /* rsm accessibility colors */
+  --rsm-hc-blue: #007EB4;
+  --rsm-light-blue: #E5F5FC;
+  --rsm-hc-green: #2B6C25;
+  --rsm-extra-light-grey: #F0F0F0;
+  --rsm-darker-blue: #006E9D;
+
+  /* colors */
+  --background-color: white;
+  --light-color: #f8f8f8;
+  --dark-color: #505050;
+  --text-color: #131313;
+  --link-color: var(--rsm-primary-green);
+  --link-hover-color: var(--rsm-hc-green);
+  --button-disabled-bg: var(--rsm-mid-grey);
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -209,7 +217,7 @@ button:focus {
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: var(--button-disabled-bg);
   cursor: unset;
 }
 
