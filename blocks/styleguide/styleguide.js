@@ -1,9 +1,11 @@
 import { loadFragment } from '../fragment/fragment.js';
 import decoratePrimaryColours from './decorators/primary-colours.js';
+import decorateButtons from './decorators/buttons.js';
 
 const fragmentConfig = {
   '/style-guide/primary-colours': decoratePrimaryColours,
   '/style-guide/titles': null,
+  '/style-guide/buttons': decorateButtons,
 };
 
 async function loadAndDecorateFragment(path, decorator) {

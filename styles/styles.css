@@ -55,7 +55,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: auto;
+  --nav-height: 64px;
 }
 
 /* fallback fonts */
@@ -298,7 +298,7 @@ main .section.highlight {
 }
 
 .rsm-green-bg {
-  background-color: var(--rsm-green);
+  background-color: var(--rsm-primary-green);
 }
 
 .rsm-mid-grey-bg {
