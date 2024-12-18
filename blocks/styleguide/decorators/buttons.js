@@ -1,4 +1,4 @@
-export default function decorateButtons(fragment) {
+export default function decorateButtonsBlock(fragment) {
   const rows = fragment.querySelectorAll('.columns.block.columns-5-cols > div');
 
   rows.forEach((row) => {
@@ -6,7 +6,6 @@ export default function decorateButtons(fragment) {
 
     if (buttonContainers.length > 0) {
       const sourceButtonContainer = buttonContainers[0];
-      const sourceButton = sourceButtonContainer.querySelector('a');
 
       const columns = row.children;
       const states = ['hover', 'active', 'disabled'];
@@ -15,21 +14,16 @@ export default function decorateButtons(fragment) {
         const column = columns[index + 2];
 
         if (column) {
-          const newButtonContainer = document.createElement('p');
-          newButtonContainer.className = 'button-container';
-
-          const clonedButton = sourceButton.cloneNode(true);
-
-          clonedButton.classList.add(state);
+          const clonedButton = sourceButtonContainer.cloneNode(true);
+          const sourceButton = clonedButton.querySelector('a');
+          sourceButton.classList.add(state);
 
           if (state === 'disabled') {
-            clonedButton.setAttribute('disabled', 'true');
-            clonedButton.classList.add('disabled');
-            clonedButton.style.pointerEvents = 'none';
+            sourceButton.setAttribute('disabled', 'true');
+            sourceButton.style.pointerEvents = 'none';
           }
 
-          newButtonContainer.appendChild(clonedButton);
-          column.appendChild(newButtonContainer);
+          column.appendChild(clonedButton);
         }
       });
     }

@@ -184,18 +184,22 @@ a:hover {
 }
 
 /* buttons */
+.button-container strong {
+  font-weight: 400;
+}
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: 1px solid transparent;
+  padding: 12px 20px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
@@ -208,17 +212,25 @@ button {
 }
 
 a.button:hover,
+a.button.hover,
 a.button:focus,
+a.button.active,
 button:hover,
-button:focus {
+button.hover,
+button:focus,
+button.active {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
 a.button:disabled,
+a.button.disabled,
 a.button:disabled:hover,
+a.button.disabled:hover,
 button:disabled,
-button:disabled:hover {
+button.disabled,
+button:disabled:hover,
+button.disabled:hover {
   background-color: var(--button-disabled-bg);
   cursor: unset;
 }
@@ -226,8 +238,39 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border: 1px solid var(--rsm-primary-green);
+  color: var(--rsm-primary-green);
+}
+
+a.button.secondary:hover,
+a.button.secondary.hover,
+button.secondary:hover,
+button.secondary.hover {
+  background-color: var(--rsm-primary-green);
+  border: 1px solid var(--rsm-primary-green);
+  color: var(--rsm-white);
+}
+
+a.button.secondary:focus,
+a.button.secondary.active,
+button.secondary:focus,
+button.secondary.active {
+  background-color: var(--link-hover-color);
+  border: 1px solid var(--link-hover-color);
+  color: var(--rsm-white);
+}
+
+a.button.secondary:disabled,
+a.button.secondary.disabled,
+a.button.secondary:disabled:hover,
+a.button.secondary.disabled:hover,
+button.secondary:disabled,
+button.secondary.disabled,
+button.secondary:disabled:hover,
+button.secondary.disabled:hover {
+  background-color: unset;
+  border: 1px solid var(--button-disabled-bg);
+  color: var(--button-disabled-bg);
 }
 
 main img {
