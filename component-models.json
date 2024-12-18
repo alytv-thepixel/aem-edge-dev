@@ -90,6 +90,10 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "link",
+            "value": "link"
           }
         ]
       }
@@ -288,6 +292,18 @@
             "value": "h6"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "formFields",
+        "valueType": "",
+        "name": "formFields",
+        "value": "",
+        "label": "Form Field"
       }
     ]
   }
