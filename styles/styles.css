@@ -187,6 +187,7 @@ a:hover {
 .button-container strong {
   font-weight: 400;
 }
+
 a.button:any-link,
 button {
   box-sizing: border-box;
