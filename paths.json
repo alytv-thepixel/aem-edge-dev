@@ -1,10 +1,14 @@
 {
   "mappings": [
-    "/content/alytv-eds-site/:/",
-    "/content/alytv-eds-site/configuration:/.helix/config.json",
-    "/content/alytv-eds-site/metadata:/metadata.json"
+    "/content/alytv-eds-site-main/:/",
+    "/content/alytv-eds-site-main/configuration:/.helix/config.json",
+    "/content/alytv-eds-site-main/metadata:/metadata.json",
+    "/content/alytv-eds-site-feature/:/feature/",
+    "/content/alytv-eds-site-feature/configuration:/.helix/feature-config.json",
+    "/content/alytv-eds-site-feature/metadata:/feature-metadata.json"
   ],
   "includes": [
-    "/content/alytv-eds-site/"
+    "/content/alytv-eds-site-main/",
+    "/content/alytv-eds-site-feature/"
   ]
 }
