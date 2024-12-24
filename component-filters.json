@@ -15,15 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "hero-heading",
-      "form"
-    ]
-  },
-  {
-    "id": "form-fields",
-    "components": [
-      "form-field"
+      "fragment"
     ]
   },
   {
@@ -45,6 +37,33 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "form",
+    "components": [
+      "captcha",
+      "checkbox",
+      "checkbox-group",
+      "date-input",
+      "drop-down",
+      "email",
+      "file-input",
+      "form-button",
+      "form-fragment",
+      "form-image",
+      "form-reset-button",
+      "form-submit-button",
+      "modal",
+      "number-input",
+      "panel",
+      "plain-text",
+      "radio-group",
+      "rating",
+      "telephone-input",
+      "text-input",
+      "tnc",
+      "wizard"
     ]
   }
 ]
