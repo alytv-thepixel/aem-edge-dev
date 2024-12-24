@@ -294,17 +294,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "form",
-    "fields": [
-      {
-        "component": "formFields",
-        "valueType": "",
-        "name": "formFields",
-        "value": "",
-        "label": "Form Field"
-      }
-    ]
   }
 ]
