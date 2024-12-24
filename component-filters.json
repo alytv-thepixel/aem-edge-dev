@@ -16,7 +16,14 @@
       "cards",
       "columns",
       "fragment",
-      "hero-heading"
+      "hero-heading",
+      "form"
+    ]
+  },
+  {
+    "id": "form-fields",
+    "components": [
+      "form-field"
     ]
   },
   {
