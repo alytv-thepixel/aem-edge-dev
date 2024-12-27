@@ -1,4 +1,5 @@
-.primary-colours {
+.primary-colours,
+.accessible-colours {
   display: flex;
   flex-direction: column;
 
@@ -27,8 +28,13 @@
   margin-top: 30px;
 }
 
+.accessible-colours .colour-box {
+  min-height: 50px;
+}
+
 @media (width >= 900px) {
-  .primary-colours {
+  .primary-colours,
+  .accessible-colours {
     flex-direction: row;
     justify-content: space-between;
     gap: 5%;
@@ -54,5 +60,13 @@
       max-width: 150px;
       flex: 1 1 150px;
     }
+  }
+
+  .accessible-colours {
+    flex-wrap: wrap;
+  }
+
+  .accessible-colours [class^="col-"] {
+    flex: 1 1 100%;
   }
 }

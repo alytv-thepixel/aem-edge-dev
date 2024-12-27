@@ -40,7 +40,7 @@
 
   &.rsm-green-bg {
     &::before, &::after {
-      background-color: var(--rsm-green);
+      background-color: var(--rsm-primary-green);
     }
   }
 }
