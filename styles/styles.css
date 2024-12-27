@@ -374,6 +374,26 @@ main .section.highlight {
   background-color: var(--text-grey);
 }
 
+.high-contrast-blue-bg {
+  background-color: var(--rsm-hc-blue);
+}
+
+.light-blue-bg {
+  background-color: var(--rsm-light-blue);
+}
+
+.high-contrast-green-bg {
+  background-color: var(--rsm-hc-green);
+}
+
+.extra-light-grey-bg {
+  background-color: var(--rsm-extra-light-grey);
+}
+
+.darker-blue-bg {
+  background-color: var(--rsm-darker-blue);
+}
+
 .op-80 {
   opacity: 0.8;
 }

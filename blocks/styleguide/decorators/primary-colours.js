@@ -23,7 +23,7 @@ function getColourObject(listItem) {
  * @param {Array} opacities
  * @returns {HTMLLIElement}
  */
-function createColourList(colour, showOpacity = false, opacities = [80, 60, 40, 20]) {
+function createColourList(colour, showOpacity = false, cls, opacities = [80, 60, 40, 20]) {
   const liElement = document.createElement('li');
   const colourLabel = document.createElement('p');
   const colourBox = document.createElement('div');
@@ -37,7 +37,7 @@ function createColourList(colour, showOpacity = false, opacities = [80, 60, 40, 
   elements.forEach((element) => liElement.append(element));
 
   // only show opacities for the first column.
-  if (showOpacity) {
+  if (showOpacity && cls === 'primary-colours') {
     const opacityContainer = document.createElement('div');
     opacityContainer.classList = 'opacity-container';
     opacities.forEach((opacity) => {
@@ -57,16 +57,16 @@ function createColourList(colour, showOpacity = false, opacities = [80, 60, 40, 
  * @param {Array} columns
  * @returns {HTMLUListElement}
  */
-function generateDom(columns) {
+function generateDom(columns, cls) {
   const container = document.createElement('div');
-  container.className = 'primary-colours';
+  container.className = cls;
 
   columns.forEach((col, index) => {
     const ulElement = document.createElement('ul');
     ulElement.className = `col-${index + 1}`;
 
     col.forEach((colour) => {
-      const liElement = createColourList(colour, index === 0);
+      const liElement = createColourList(colour, index === 0, cls);
       ulElement.append(liElement);
     });
 
@@ -77,19 +77,24 @@ function generateDom(columns) {
 }
 
 export default function decoratePrimaryColours(fragment) {
-  const colourLists = fragment.querySelectorAll('ul');
-  const cols = [];
+  const sections = fragment.querySelectorAll('.section');
 
-  colourLists.forEach((colourList) => {
-    const colours = [];
-    [...colourList.children].forEach((item) => {
-      colours.push(getColourObject(item));
+  sections.forEach((el, index) => {
+    const colourLists = el.querySelectorAll('ul');
+    const cols = [];
+    const cls = ['primary-colours', 'accessible-colours'];
+
+    colourLists.forEach((colourList) => {
+      const colours = [];
+      [...colourList.children].forEach((item) => {
+        colours.push(getColourObject(item));
+      });
+
+      cols.push(colours);
+      colourList.remove();
     });
 
-    cols.push(colours);
-    colourList.remove();
+    const domElement = generateDom(cols, cls[index]);
+    fragment.querySelectorAll('.section')[index].firstElementChild.append(domElement);
   });
-
-  const domElement = generateDom(cols);
-  fragment.firstElementChild.firstElementChild.append(domElement);
 }
