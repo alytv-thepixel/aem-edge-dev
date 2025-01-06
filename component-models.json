@@ -109,7 +109,11 @@
           },
           {
             "name": "RSM Midnight blue",
-            "value": "midnight-blue-bg dark-bg"
+            "value": "midnight-blue-bg"
+          },
+          {
+            "name": "Dark Background",
+            "value": "dark-bg"
           }
         ]
       }
