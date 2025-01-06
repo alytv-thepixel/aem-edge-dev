@@ -57,6 +57,10 @@
   --nav-height: 64px;
 }
 
+.dark-bg {
+    --link-color: var(--background-color);
+}
+
 /* fallback fonts */
 @font-face {
   font-family: roboto-condensed-fallback;
