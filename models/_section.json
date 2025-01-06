@@ -27,6 +27,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "RSM Midnight blue",
+              "value": "midnight-blue-bg"
             }
           ]
         }
