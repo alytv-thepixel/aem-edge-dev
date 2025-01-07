@@ -11,6 +11,10 @@
  */
 
 /* eslint-env browser */
+
+// Import the JSON with SVG mappings
+import iconsMap from '../icons.js';
+
 function sampleRUM(checkpoint, data) {
   // eslint-disable-next-line max-len
   const timeShift = () => (window.performance ? window.performance.now() : Date.now() - window.hlx.rum.firstReadTime);
@@ -435,41 +439,33 @@ function decorateButtons(element) {
   });
 }
 
-const svgCache = {};
-
 /**
  * Add <img> for icon, prefixed with codeBasePath and optional prefix.
  * @param {Element} [span] span element with icon classes
- * @param {string} [prefix] prefix to be added to icon src
  */
-async function decorateIcon(span, prefix = '') {
-  try {
-    const iconName = Array.from(span.classList)
-      .find((c) => c.startsWith('icon-'))
-      .substring(5);
+function decorateIcon(span) {
+  const iconName = Array.from(span.classList)
+    .find((c) => c.startsWith('icon-'))
+    .substring(5);
 
-    if (!iconName) {
-      console.error('No icon class found on span:', span);
-      return;
-    }
+  if (!iconName || !iconsMap[iconName]) {
+    console.error('No icon class found on span:', span);
+    return;
+  }
 
-    if (svgCache[iconName]) {
-      span.innerHTML = svgCache[iconName];
-      return;
-    }
+  const svgContent = iconsMap[iconName];
+  if (!svgContent) {
+    console.error(`No SVG found for icon: ${iconName}`);
+    return;
+  }
 
-    const svgPath = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
+  span.innerHTML = svgContent;
 
-    const response = await fetch(svgPath);
-    if (!response.ok) {
-      throw new Error(`Failed to load SVG: ${svgPath}`);
-    }
-
-    const svgContent = await response.text();
-    svgCache[iconName] = svgContent;
-    span.innerHTML = svgContent;
-  } catch (error) {
-    console.error('Error decorating icon:', error);
+  const svgElement = span.querySelector('svg');
+  if (svgElement) {
+    const title = document.createElement('title');
+    title.textContent = iconName; // Use the icon name as the title
+    svgElement.prepend(title);
   }
 }
 
