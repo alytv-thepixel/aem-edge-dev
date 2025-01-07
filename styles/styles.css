@@ -35,8 +35,10 @@
   --text-color: var(--text-grey);
   --link-color: var(--rsm-primary-green);
   --link-text-color: var(--background-color);
+  --link-hover-text-color: var(--rsm-hc-green);
 
   /* button state colors */
+
   /* primary */
   --button-primary-bg-color: var(--rsm-primary-green);
   --button-primary-text-color: var(--rsm-white);
@@ -56,19 +58,18 @@
   --button-secondary-disabled-bg-color: var(--rsm-mid-grey);
   --button-secondary-disabled-text-color: var(--rsm-mid-grey);
 
-    /*background-color: var(--link-color);*/
-    /*color: var(--link-text-color);*/
+  /* background-color: var(--link-color); */
+
+  /* color: var(--link-text-color); */
   --button-disabled-bg: var(--rsm-mid-grey);
-  --link-hover-color: var(--rsm-hc-green);
-  --link-hover-text-color: var(--background-color);
 
   /* secondary */
   --link-secondary-hover-color: var(--rsm-white);
   --link-secondary-hover-text-color: var(--background-color);
 
   /* fonts */
-  --body-font-family: Prelo, roboto, roboto-fallback, sans-serif;
-  --heading-font-family: Prelo, roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: prelo, roboto, roboto-fallback, sans-serif;
+  --heading-font-family: prelo, roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 16px;
@@ -87,23 +88,25 @@
 }
 
 .dark-bg {
-    /* primary */
-    --button-primary-bg-color: var(--rsm-white);
-    --button-primary-text-color: var(--rsm-primary-green);
-    --button-primary-hover-bg-color: var(--rsm-hc-green);
-    --button-primary-hover-text-color: var(--rsm-white);
-    --button-primary-disabled-bg-color: var(--rsm-mid-grey);
-    --button-primary-disabled-text-color: var(--rsm-white);
+  /* primary */
+  --button-primary-bg-color: var(--rsm-white);
+  --button-primary-text-color: var(--rsm-primary-green);
+  --button-primary-hover-bg-color: var(--rsm-hc-green);
+  --button-primary-hover-text-color: var(--rsm-white);
+  --button-primary-disabled-bg-color: var(--rsm-mid-grey);
+  --button-primary-disabled-text-color: var(--rsm-white);
 
-    /* secondary */
-    --button-secondary-border-color: var(--rsm-white);
-    --button-secondary-text-color: var(--rsm-white);
-    --button-secondary-hover-bg-color: var(--rsm-white);
-    --button-secondary-hover-text-color: var(--rsm-hc-green);
-    --button-secondary-active-bg-color: var(--rsm-white);
-    --button-secondary-active-text-color: var(--rsm-hc-green);
-    --button-secondary-disabled-bg-color: var(--rsm-light-grey);
-    --button-secondary-disabled-text-color: var(--rsm-light-grey);
+  /* secondary */
+  --button-secondary-border-color: var(--rsm-white);
+  --button-secondary-text-color: var(--rsm-white);
+  --button-secondary-hover-bg-color: var(--rsm-white);
+  --button-secondary-hover-text-color: var(--rsm-hc-green);
+  --button-secondary-active-bg-color: var(--rsm-white);
+  --button-secondary-active-text-color: var(--rsm-hc-green);
+  --button-secondary-disabled-bg-color: var(--rsm-light-grey);
+  --button-secondary-disabled-text-color: var(--rsm-light-grey);
+  --link-color: var(--rsm-white);
+  --link-hover-text-color: var(--rsm-white);
 }
 
 /* fallback fonts */
@@ -178,10 +181,6 @@ h2 {
   font-weight: 300;
 }
 
-h3 {
-  font-weight: 400;
-}
-
 h4,
 h5,
 h6 {
@@ -190,7 +189,11 @@ h6 {
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 400;
+}
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
@@ -351,6 +354,11 @@ main img {
   width: 100%;
 }
 
+.icon svg {
+  height: 100%;
+  width: 100%;
+}
+
 /* sections */
 main > .section {
   margin: 40px 0;
@@ -389,7 +397,8 @@ main .section.highlight {
 }
 
 .midnight-blue-bg {
-  background-color: #051D3B;
+  background-color: var(--rsm-midnight-blue);
+  color: var(--rsm-white);
 }
 
 .hidden {
