@@ -1,3 +1,15 @@
+.styleguide-wrapper .carousel-wrapper .carousel-slides {
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.carousel-wrapper nav {
+  justify-content: start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .primary-colours,
 .accessible-colours {
   display: flex;
