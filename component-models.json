@@ -90,6 +90,14 @@
           {
             "name": "secondary",
             "value": "secondary"
+          },
+          {
+            "name": "link",
+            "value": "tertiary"
+          },
+          {
+            "name": "link(Bold)",
+            "value": "tertiary-bold"
           }
         ]
       }
