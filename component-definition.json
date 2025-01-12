@@ -52,7 +52,8 @@
                 "template": {
                   "model": "button",
                   "linkTitle": "button",
-                  "linkVariant": "button"
+                  "button_linkTitle": "button",
+                  "button_linkVariant": "button-primary"
                 }
               }
             }
