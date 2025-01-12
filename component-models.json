@@ -93,7 +93,10 @@
           },
           {
             "name": "link",
-            "value": "tertiary"
+            "value": "tertiary",
+            "className": "tertiary",
+            "class": "tertiary2",
+            "style": "tertiary3"
           },
           {
             "name": "link(Bold)",
