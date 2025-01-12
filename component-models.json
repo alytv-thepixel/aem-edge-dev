@@ -81,26 +81,28 @@
         "options": [
           {
             "name": "default",
-            "value": ""
+            "value": "",
+            "class": ""
           },
           {
             "name": "primary",
-            "value": "primary"
+            "value": "primary",
+            "class": "tertiary2"
           },
           {
             "name": "secondary",
-            "value": "secondary"
+            "value": "secondary",
+            "class": "sec"
           },
           {
             "name": "link",
             "value": "tertiary",
-            "className": "tertiary",
-            "class": "tertiary2",
-            "style": "tertiary3"
+            "class": "tertiary2"
           },
           {
             "name": "link(Bold)",
-            "value": "tertiary-bold"
+            "value": "tertiary-bold",
+            "class": "tertiary-bld"
           }
         ]
       }
