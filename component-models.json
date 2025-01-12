@@ -75,6 +75,16 @@
         "label": "Title"
       },
       {
+        "name": "className",
+        "type": "dropdown",
+        "label": "CSS Class",
+        "options": [
+          { "label": "Default", "value": "" },
+          { "label": "Blue Theme", "value": "blue-class" },
+          { "label": "Red Theme", "value": "red-class" }
+        ]
+      },
+      {
         "component": "select",
         "name": "linkType",
         "label": "Type",
