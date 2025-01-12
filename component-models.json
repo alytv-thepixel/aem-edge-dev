@@ -70,49 +70,75 @@
         "label": "Text"
       },
       {
-        "component": "text",
+        "component": "select",
         "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "name": "className",
-        "type": "dropdown",
-        "label": "CSS Class",
+        "label": "Button or Link",
         "options": [
-          { "label": "Default", "value": "" },
-          { "label": "Blue Theme", "value": "blue-class" },
-          { "label": "Red Theme", "value": "red-class" }
+          {
+            "name": "Button",
+            "value": "button"
+          },
+          {
+            "name": "Link",
+            "value": "link"
+          }
         ]
       },
       {
         "component": "select",
-        "name": "linkType",
-        "label": "Type",
+        "name": "linkVariant",
+        "label": "Link Variant",
         "options": [
           {
-            "name": "default",
-            "value": "",
-            "class": ""
+            "name": "None",
+            "value": ""
           },
           {
-            "name": "primary",
-            "value": "primary",
-            "class": "tertiary2"
+            "name": "Primary",
+            "value": "button-primary"
           },
           {
-            "name": "secondary",
-            "value": "secondary",
-            "class": "sec"
+            "name": "Secondary",
+            "value": "button-secondary"
           },
           {
-            "name": "link",
-            "value": "tertiary",
-            "class": "tertiary2"
+            "name": "Tertiary Outline",
+            "value": "button-tertiary-outline"
           },
           {
-            "name": "link(Bold)",
-            "value": "tertiary-bold",
-            "class": "tertiary-bld"
+            "name": "Tertiary Filled",
+            "value": "button-tertiary-filled"
+          },
+          {
+            "name": "Text Only",
+            "value": "button-text-only"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "linkIconType",
+        "label": "Icon Type",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Both",
+            "value": "icon-both"
+          },
+          {
+            "name": "Right",
+            "value": "icon-right"
+          },
+          {
+            "name": "Left",
+            "value": "icon-left"
+          },
+          {
+            "name": "Icon Only",
+            "value": "icon-only"
           }
         ]
       }
@@ -162,25 +188,6 @@
     ]
   },
   {
-    "id": "columns",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
     "id": "carousel-item",
     "fields": [
       {
@@ -203,6 +210,25 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "columns",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
       }
     ]
   },
