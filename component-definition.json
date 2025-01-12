@@ -51,7 +51,8 @@
                 "resourceType": "core/franklin/components/button/v1/button",
                 "template": {
                   "model": "button",
-                  "linkTitle": "button"
+                  "linkTitle": "button",
+                  "linkVariant": "button"
                 }
               }
             }
