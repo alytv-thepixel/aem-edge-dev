@@ -72,15 +72,15 @@
       {
         "component": "select",
         "name": "linkTitle",
-        "label": "Button or Link",
+        "label": "Button Type",
         "options": [
           {
             "name": "Button (Primary)",
-            "value": "button-primary"
+            "value": "button primary"
           },
           {
             "name": "Button (Secondary)",
-            "value": "button-secondary"
+            "value": "button secondary"
           },
           {
             "name": "Link",
