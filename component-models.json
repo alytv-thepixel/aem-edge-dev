@@ -79,12 +79,20 @@
             "value": "button-primary"
           },
           {
-            "name": "Button (Primary)",
+            "name": "Button (Secondary)",
             "value": "button-secondary"
           },
           {
             "name": "Link",
-            "value": "link"
+            "value": "link tertiary"
+          },
+          {
+            "name": "Link (Bold)",
+            "value": "link tertiary-bold"
+          },
+          {
+            "name": "Link (Contextual)",
+            "value": "link tertiary-contextual"
           }
         ]
       }
