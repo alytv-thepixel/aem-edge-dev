@@ -75,70 +75,16 @@
         "label": "Button or Link",
         "options": [
           {
-            "name": "Button",
-            "value": "button"
+            "name": "Button (Primary)",
+            "value": "button-primary"
+          },
+          {
+            "name": "Button (Primary)",
+            "value": "button-secondary"
           },
           {
             "name": "Link",
             "value": "link"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "linkVariant",
-        "label": "Link Variant",
-        "options": [
-          {
-            "name": "None",
-            "value": ""
-          },
-          {
-            "name": "Primary",
-            "value": "button-primary"
-          },
-          {
-            "name": "Secondary",
-            "value": "button-secondary"
-          },
-          {
-            "name": "Tertiary Outline",
-            "value": "button-tertiary-outline"
-          },
-          {
-            "name": "Tertiary Filled",
-            "value": "button-tertiary-filled"
-          },
-          {
-            "name": "Text Only",
-            "value": "button-text-only"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "linkIconType",
-        "label": "Icon Type",
-        "options": [
-          {
-            "name": "None",
-            "value": ""
-          },
-          {
-            "name": "Both",
-            "value": "icon-both"
-          },
-          {
-            "name": "Right",
-            "value": "icon-right"
-          },
-          {
-            "name": "Left",
-            "value": "icon-left"
-          },
-          {
-            "name": "Icon Only",
-            "value": "icon-only"
           }
         ]
       }
