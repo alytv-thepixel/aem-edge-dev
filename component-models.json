@@ -71,7 +71,7 @@
       },
       {
         "component": "select",
-        "name": "button_linkTitle",
+        "name": "linkTitle",
         "label": "Button or Link",
         "options": [
           {
@@ -86,7 +86,7 @@
       },
       {
         "component": "select",
-        "name": "button_linkVariant",
+        "name": "linkVariant",
         "label": "Link Variant",
         "options": [
           {
