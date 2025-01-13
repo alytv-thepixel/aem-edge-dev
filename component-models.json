@@ -95,6 +95,33 @@
             "value": "link tertiary-contextual"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Button (Primary)",
+            "value": "test1"
+          },
+          {
+            "name": "Button (Secondary)",
+            "value": "test2"
+          },
+          {
+            "name": "Link",
+            "value": "test3"
+          },
+          {
+            "name": "Link (Bold)",
+            "value": "test4"
+          },
+          {
+            "name": "Link (Contextual)",
+            "value": "test5"
+          }
+        ]
       }
     ]
   },
