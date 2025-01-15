@@ -19,7 +19,7 @@
       "form",
       "form-embed",
       "carousel",
-      "progressbar"
+      "rsm-button"
     ]
   },
   {
@@ -46,7 +46,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "rsm-button"
     ]
   }
 ]
