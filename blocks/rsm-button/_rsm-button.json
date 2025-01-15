@@ -40,7 +40,6 @@
         {
           "component": "select",
           "name": "classes",
-          "value": "",
           "label": "Button Type",
           "valueType": "string",
           "options": [
