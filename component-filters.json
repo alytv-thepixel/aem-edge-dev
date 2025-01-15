@@ -18,7 +18,8 @@
       "fragment",
       "form",
       "form-embed",
-      "carousel"
+      "carousel",
+      "progressbar"
     ]
   },
   {
