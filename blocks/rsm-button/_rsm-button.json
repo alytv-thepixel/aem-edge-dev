@@ -1,7 +1,7 @@
 {
   "definitions": [
     {
-      "title": "Button",
+      "title": "RSM Button",
       "id": "rsm-button",
       "plugins": {
         "xwalk": {
@@ -11,7 +11,7 @@
               "model": "rsm-button",
               "linkText": "Call to action",
               "linkTitle": "Call to action",
-              "classes": ""
+              "classes": "button primary"
             }
           }
         }
