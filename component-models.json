@@ -281,23 +281,23 @@
         "options": [
           {
             "name": "Button (Primary)",
-            "value": "button primary"
+            "value": "primary"
           },
           {
             "name": "Button (Secondary)",
-            "value": "button secondary"
+            "value": "secondary"
           },
           {
             "name": "Link",
-            "value": "link tertiary"
+            "value": "tertiary"
           },
           {
             "name": "Link (Bold)",
-            "value": "link tertiary-bold"
+            "value": "tertiary-bold"
           },
           {
             "name": "Link (Contextual)",
-            "value": "link tertiary-contextual"
+            "value": "tertiary-contextual"
           }
         ]
       }
