@@ -39,8 +39,10 @@
         },
         {
           "component": "select",
-          "name": "classes",
+          "name": "linkType",
+          "value": "",
           "label": "Button Type",
+          "description": "Choose button type to affect styles",
           "valueType": "string",
           "options": [
             {

@@ -19,7 +19,8 @@
       "form",
       "form-embed",
       "carousel",
-      "rsm-button"
+      "rsm-button",
+      "progressbar"
     ]
   },
   {
