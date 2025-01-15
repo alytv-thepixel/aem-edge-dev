@@ -1,0 +1,73 @@
+{
+  "definitions": [
+    {
+      "title": "Button",
+      "id": "rsm-button",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "model": "rsm-button",
+              "linkText": "Call to action",
+              "linkTitle": "Call to action",
+              "classes": ""
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "rsm-button",
+      "fields": [
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link"
+        },
+        {
+          "component": "text",
+          "name": "linkText",
+          "label": "Text"
+        },
+        {
+          "component": "text",
+          "name": "linkTitle",
+          "label": "Button Type"
+        },
+        {
+          "component": "select",
+          "name": "classes",
+          "value": "",
+          "label": "Button Type",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Button (Primary)",
+              "value": "button primary"
+            },
+            {
+              "name": "Button (Secondary)",
+              "value": "button secondary"
+            },
+            {
+              "name": "Link",
+              "value": "link tertiary"
+            },
+            {
+              "name": "Link (Bold)",
+              "value": "link tertiary-bold"
+            },
+            {
+              "name": "Link (Contextual)",
+              "value": "link tertiary-contextual"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

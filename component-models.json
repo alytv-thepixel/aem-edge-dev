@@ -70,87 +70,26 @@
         "label": "Text"
       },
       {
-        "component": "select",
+        "component": "text",
         "name": "linkTitle",
-        "label": "Button Type",
-        "options": [
-          {
-            "name": "Button (Primary)",
-            "value": "button primary"
-          },
-          {
-            "name": "Button (Secondary)",
-            "value": "button secondary"
-          },
-          {
-            "name": "Link",
-            "value": "link tertiary"
-          },
-          {
-            "name": "Link (Bold)",
-            "value": "link tertiary-bold"
-          },
-          {
-            "name": "Link (Contextual)",
-            "value": "link tertiary-contextual"
-          }
-        ]
+        "label": "Title"
       },
       {
         "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Style",
-        "valueType": "string",
+        "name": "linkType",
+        "label": "Type",
         "options": [
           {
-            "name": "Button (Primary)",
-            "value": "test1"
+            "name": "default",
+            "value": ""
           },
           {
-            "name": "Button (Secondary)",
-            "value": "test2"
+            "name": "primary",
+            "value": "primary"
           },
           {
-            "name": "Link",
-            "value": "test3"
-          },
-          {
-            "name": "Link (Bold)",
-            "value": "test4"
-          },
-          {
-            "name": "Link (Contextual)",
-            "value": "test5"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "name": "testVal",
-        "value": "",
-        "label": "Test Val",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Button (Primary)",
-            "value": "test1"
-          },
-          {
-            "name": "Button (Secondary)",
-            "value": "test2"
-          },
-          {
-            "name": "Link",
-            "value": "test3"
-          },
-          {
-            "name": "Link (Bold)",
-            "value": "test4"
-          },
-          {
-            "name": "Link (Contextual)",
-            "value": "test5"
+            "name": "secondary",
+            "value": "secondary"
           }
         ]
       }
@@ -281,34 +220,49 @@
     ]
   },
   {
-    "id": "progressbar",
+    "id": "rsm-button",
     "fields": [
       {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
         "component": "text",
-        "name": "progress",
-        "value": "",
-        "label": "Progress",
-        "valueType": "string"
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Button Type"
       },
       {
         "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Styles",
-        "description": "Choose options to update the block's style",
+        "label": "Button Type",
         "valueType": "string",
         "options": [
           {
-            "name": "Gray",
-            "value": "gray"
+            "name": "Button (Primary)",
+            "value": "button primary"
           },
           {
-            "name": "Primary green",
-            "value": "rsm-primary-green"
+            "name": "Button (Secondary)",
+            "value": "button secondary"
           },
           {
-            "name": "Primary blue",
-            "value": "rsm-blue"
+            "name": "Link",
+            "value": "link tertiary"
+          },
+          {
+            "name": "Link (Bold)",
+            "value": "link tertiary-bold"
+          },
+          {
+            "name": "Link (Contextual)",
+            "value": "link tertiary-contextual"
           }
         ]
       }

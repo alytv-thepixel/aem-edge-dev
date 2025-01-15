@@ -54,7 +54,9 @@
         "columns",
         "fragment",
         "form",
-        "form-embed"
+        "form-embed",
+        "carousel",
+        "rsm-button"
       ]
     }
   ]
