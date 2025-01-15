@@ -258,22 +258,22 @@
     "fields": [
       {
         "component": "aem-content",
-        "name": "link",
-        "label": "Link"
+        "name": "action",
+        "label": "Button action"
       },
       {
         "component": "text",
-        "name": "linkText",
+        "name": "buttonText",
         "label": "Text"
       },
       {
         "component": "text",
-        "name": "linkTitle",
-        "label": "Button Type"
+        "name": "buttonTitle",
+        "label": "Title"
       },
       {
         "component": "select",
-        "name": "linkType",
+        "name": "classes",
         "value": "",
         "label": "Button Type",
         "description": "Choose button type to affect styles",
@@ -281,23 +281,23 @@
         "options": [
           {
             "name": "Button (Primary)",
-            "value": "button primary"
+            "value": "primary"
           },
           {
             "name": "Button (Secondary)",
-            "value": "button secondary"
+            "value": "secondary"
           },
           {
             "name": "Link",
-            "value": "link tertiary"
+            "value": "tertiary"
           },
           {
             "name": "Link (Bold)",
-            "value": "link tertiary-bold"
+            "value": "tertiary bold"
           },
           {
             "name": "Link (Contextual)",
-            "value": "link tertiary-contextual"
+            "value": "tertiary contextual"
           }
         ]
       }
