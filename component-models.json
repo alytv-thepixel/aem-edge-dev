@@ -281,6 +281,40 @@
     ]
   },
   {
+    "id": "progressbar",
+    "fields": [
+      {
+        "component": "text",
+        "name": "progress",
+        "value": "",
+        "label": "Progress",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Styles",
+        "description": "Choose options to update the block's style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Gray",
+            "value": "gray"
+          },
+          {
+            "name": "Primary green",
+            "value": "rsm-primary-green"
+          },
+          {
+            "name": "Primary blue",
+            "value": "rsm-blue"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "form-button",
     "fields": [
       {
