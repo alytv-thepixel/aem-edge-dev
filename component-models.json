@@ -273,7 +273,7 @@
       },
       {
         "component": "select",
-        "name": "buttonType",
+        "name": "classes",
         "value": "",
         "label": "Button Type",
         "description": "Choose button type to affect styles",
@@ -293,11 +293,11 @@
           },
           {
             "name": "Link (Bold)",
-            "value": "tertiary-bold"
+            "value": "tertiary bold"
           },
           {
             "name": "Link (Contextual)",
-            "value": "tertiary-contextual"
+            "value": "tertiary contextual"
           }
         ]
       }
