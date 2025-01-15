@@ -263,17 +263,17 @@
       },
       {
         "component": "text",
-        "name": "linkText",
+        "name": "buttonText",
         "label": "Text"
       },
       {
         "component": "text",
-        "name": "linkTitle",
-        "label": "Button Type"
+        "name": "buttonTitle",
+        "label": "Title"
       },
       {
         "component": "select",
-        "name": "linkType",
+        "name": "buttonType",
         "value": "",
         "label": "Button Type",
         "description": "Choose button type to affect styles",
