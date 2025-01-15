@@ -215,9 +215,9 @@
                 "template": {
                   "name": "RSM Button",
                   "model": "rsm-button",
-                  "linkText": "Call to action",
-                  "linkTitle": "Call to action",
-                  "classes": "button primary"
+                  "buttonText": "Call to action",
+                  "buttonTitle": "Call to action",
+                  "buttonType": "button primary"
                 }
               }
             }
