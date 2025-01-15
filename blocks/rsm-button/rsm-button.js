@@ -3,7 +3,7 @@ export default function decorate(block) {
 
   if (innerDiv) {
     console.log(innerDiv)
-    // const childDiv = innerDiv.firstElementChild;
+    const childDiv = innerDiv.firstElementChild;
     //
     // if (childDiv) {
     //   let value = childDiv.innerText.trim();
