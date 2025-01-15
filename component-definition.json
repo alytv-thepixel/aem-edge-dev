@@ -200,7 +200,8 @@
                 "template": {
                   "name": "Progressbar",
                   "model": "progressbar",
-                  "progress": "80"
+                  "progress": "80",
+                  "classes": "gray"
                 }
               }
             }

@@ -1,0 +1,23 @@
+.progressbar-wrapper .progressbar {
+    position: relative;
+    height: 15px;
+    width: 100%;
+    margin: 22px 0;
+    background: var(--rsm-light-grey);
+}
+
+.progressbar-wrapper .progressbar > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--text-grey);
+    height: 100%;
+}
+
+.progressbar-wrapper .progressbar.rsm-primary-green > div {
+    background: var(--rsm-primary-green);
+}
+
+.progressbar-wrapper .progressbar.rsm-blue > div {
+    background: var(--rsm-blue);
+}
