@@ -273,7 +273,7 @@
       },
       {
         "component": "select",
-        "name": "classes",
+        "name": "buttonType",
         "value": "",
         "label": "Button Type",
         "description": "Choose button type to affect styles",
@@ -281,23 +281,23 @@
         "options": [
           {
             "name": "Button (Primary)",
-            "value": "primary"
+            "value": "button primary"
           },
           {
             "name": "Button (Secondary)",
-            "value": "secondary"
+            "value": "button secondary"
           },
           {
             "name": "Link",
-            "value": "tertiary"
+            "value": "link tertiary"
           },
           {
             "name": "Link (Bold)",
-            "value": "tertiary bold"
+            "value": "link tertiary-bold"
           },
           {
             "name": "Link (Contextual)",
-            "value": "tertiary contextual"
+            "value": "link tertiary-contextual"
           }
         ]
       }
