@@ -21,8 +21,7 @@
       "carousel",
       "rsm-button",
       "progressbar",
-      "hero-heading",
-      "wcm-button"
+      "hero-heading"
     ]
   },
   {
@@ -50,8 +49,7 @@
       "image",
       "button",
       "title",
-      "rsm-button",
-      "wcm-button"
+      "rsm-button"
     ]
   }
 ]

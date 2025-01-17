@@ -362,20 +362,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "wcm-button",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Button action"
-      },
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Text"
-      }
-    ]
   }
 ]
