@@ -251,9 +251,8 @@
                 "template": {
                   "name": "WCM Button",
                   "model": "wcm-button",
-                  "buttonText": "CTA",
-                  "buttonTitle": "CTA",
-                  "buttonType": "button primary"
+                  "text": "CTA",
+                  "link": "CTA"
                 }
               }
             }
