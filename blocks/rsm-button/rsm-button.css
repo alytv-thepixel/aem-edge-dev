@@ -2,6 +2,18 @@
     font-weight: 700;
 }
 
-.rsm-button .link.tertiary-contextual {
-    /*color: var(--);*/
+.rsm-button .link {
+    box-sizing: border-box;
+    display: inline-flex;
+    column-gap: 14px;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.rsm-button .link span.icon {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-self: center;
 }
