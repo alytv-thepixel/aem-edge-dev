@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Path to the folder containing SVG files
-const iconsFolderPath = path.resolve(__dirname, 'icons');
+const iconsFolderPath = path.resolve(__dirname, '../icons');
 const outputFilePath = path.resolve(__dirname, 'icons.js');
 
 /**

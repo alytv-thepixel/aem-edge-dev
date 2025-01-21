@@ -12,7 +12,7 @@
     "build:json:definitions": "merge-json-cli -i \"models/_component-definition.json\" -o \"component-definition.json\"",
     "build:json:filters": "merge-json-cli -i \"models/_component-filters.json\" -o \"component-filters.json\"",
     "prepare": "husky",
-    "icons": "node generateIconsModule.js"
+    "icons": "node ./scripts/generateIconsModule.js"
   },
   "repository": {
     "type": "git",

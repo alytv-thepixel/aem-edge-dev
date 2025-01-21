@@ -11,10 +11,6 @@
  */
 
 /* eslint-env browser */
-
-// Import the JSON with SVG mappings
-import iconsMap from '../icons.js';
-
 function sampleRUM(checkpoint, data) {
   // eslint-disable-next-line max-len
   const timeShift = () => (window.performance ? window.performance.now() : Date.now() - window.hlx.rum.firstReadTime);
@@ -411,7 +407,7 @@ function decorateButtons(element) {
     if (a.href !== a.textContent) {
       const up = a.parentElement;
       const twoup = a.parentElement.parentElement;
-      if (!a.querySelector('svg')) {
+      if (!a.querySelector('img')) {
         if (up.childNodes.length === 1 && (up.tagName === 'P' || up.tagName === 'DIV')) {
           a.className = 'button'; // default
           up.classList.add('button-container');
@@ -442,31 +438,19 @@ function decorateButtons(element) {
 /**
  * Add <img> for icon, prefixed with codeBasePath and optional prefix.
  * @param {Element} [span] span element with icon classes
+ * @param {string} [prefix] prefix to be added to icon src
+ * @param {string} [alt] alt text to be added to icon
  */
-function decorateIcon(span) {
+function decorateIcon(span, prefix = '', alt = '') {
   const iconName = Array.from(span.classList)
     .find((c) => c.startsWith('icon-'))
     .substring(5);
-
-  if (!iconName || !iconsMap[iconName]) {
-    console.error('No icon class found on span:', span);
-    return;
-  }
-
-  const svgContent = iconsMap[iconName];
-  if (!svgContent) {
-    console.error(`No SVG found for icon: ${iconName}`);
-    return;
-  }
-
-  span.innerHTML = svgContent;
-
-  const svgElement = span.querySelector('svg');
-  if (svgElement) {
-    const title = document.createElement('title');
-    title.textContent = iconName; // Use the icon name as the title
-    svgElement.prepend(title);
-  }
+  const img = document.createElement('img');
+  img.dataset.iconName = iconName;
+  img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
+  img.alt = alt;
+  img.loading = 'lazy';
+  span.append(img);
 }
 
 /**
@@ -607,7 +591,7 @@ async function loadBlock(block) {
           try {
             const mod = await import(
               `${window.hlx.codeBasePath}/blocks/${blockName}/${blockName}.js`
-            );
+              );
             if (mod.default) {
               await mod.default(block);
             }
