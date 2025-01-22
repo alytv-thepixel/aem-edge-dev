@@ -1,8 +1,4 @@
 import {
-  // decorateBlock,
-  // decorateBlocks,
-  // decorateButtons,
-  // decorateIcons,
   decorateSections,
   loadBlock,
   loadSections,
@@ -54,10 +50,7 @@ async function applyChanges(event) {
       if (newBlock) {
         newBlock.style.display = 'none';
         block.insertAdjacentElement('afterend', newBlock);
-        // decorateButtons(newBlock);
         extendDecorateButtons(newBlock);
-        // decorateIcons(newBlock);
-        // decorateBlock(newBlock);
         extendDecorateBlock(newBlock);
         extendDecorateIcons(newBlock);
         decorateRichtext(newBlock);
@@ -75,21 +68,17 @@ async function applyChanges(event) {
           const [newSection] = newElements;
           newSection.style.display = 'none';
           element.insertAdjacentElement('afterend', newSection);
-          // decorateButtons(newSection);
           extendDecorateButtons(newSection);
-          // decorateIcons(newSection);
           decorateRichtext(newSection);
           decorateSections(parentElement);
-          // decorateBlocks(parentElement);
           extendDecorateBlocks(parentElement);
+          extendDecorateIcons(newSection);
           await loadSections(parentElement);
           element.remove();
           newSection.style.display = null;
         } else {
           element.replaceWith(...newElements);
-          // decorateButtons(parentElement);
           extendDecorateButtons(parentElement);
-          // decorateIcons(parentElement);
           extendDecorateIcons(parentElement);
           decorateRichtext(parentElement);
         }

@@ -56,7 +56,8 @@
         "form",
         "form-embed",
         "carousel",
-        "rsm-button"
+        "progressbar",
+        "hero-heading"
       ]
     }
   ]
