@@ -312,55 +312,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "rsm-button",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "action",
-        "label": "Button action"
-      },
-      {
-        "component": "text",
-        "name": "buttonText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "buttonTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "buttonType",
-        "value": "",
-        "label": "Button Type",
-        "description": "Choose button type to affect styles",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Button (Primary)",
-            "value": "button primary"
-          },
-          {
-            "name": "Button (Secondary)",
-            "value": "button secondary"
-          },
-          {
-            "name": "Link",
-            "value": "link tertiary"
-          },
-          {
-            "name": "Link (Bold)",
-            "value": "link tertiary-bold"
-          },
-          {
-            "name": "Link (Contextual)",
-            "value": "link tertiary-contextual"
-          }
-        ]
-      }
-    ]
   }
 ]

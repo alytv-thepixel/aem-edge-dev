@@ -19,7 +19,6 @@
       "form",
       "form-embed",
       "carousel",
-      "rsm-button",
       "progressbar",
       "hero-heading"
     ]
@@ -48,8 +47,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "rsm-button"
+      "title"
     ]
   }
 ]

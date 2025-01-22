@@ -161,7 +161,12 @@ export function extendDecorateButtons(element) {
       if (!a.querySelector('svg')) {
         // Tertiary default and contextual link handler
         if (up.tagName === 'P') {
-          a.className = 'link tertiary';
+          // If there is text node inside 'p' - it's contextual link
+          const isContextualLink = Array.from(up.childNodes).some(
+            (node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== ''
+          );
+
+          a.className = isContextualLink ? 'link tertiary-contextual' : 'link tertiary';
         }
 
         // Tertiary bold link handler
