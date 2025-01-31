@@ -90,6 +90,7 @@
 
   /* nav height */
   --nav-height: 4rem;
+  --breadcrumbs-height: 34px;
 }
 
 .dark-bg {
@@ -412,8 +413,8 @@ main img {
 
 .icon {
   display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
+  width: auto;
+  height: auto;
 }
 
 .icon img {
