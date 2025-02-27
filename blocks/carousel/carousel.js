@@ -1,3 +1,4 @@
+
 import { fetchPlaceholders } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
@@ -101,6 +102,7 @@ export default async function decorate(block) {
 
   block.setAttribute('role', 'region');
   block.setAttribute('aria-roledescription', placeholders.carousel || 'Carousel');
+  block.setAttribute('aria-roledescription', 'Carousel');
 
   const container = document.createElement('div');
   container.classList.add('carousel-slides-container');
@@ -113,9 +115,22 @@ export default async function decorate(block) {
   if (!isSingleSlide) {
     const slideIndicatorsNav = document.createElement('nav');
     slideIndicatorsNav.setAttribute('aria-label', placeholders.carouselSlideControls || 'Carousel Slide Controls');
+    const slideNavButtonPrev = document.createElement('div');
+    const slideNavButtonNext = document.createElement('div');
+
+    slideNavButtonPrev.innerHTML = `
+      <button type="button" class="nav-button slide-prev" aria-label="Previous Slide"></button>
+    `;
+    slideNavButtonNext.innerHTML = `
+      <button type="button" class="nav-button slide-next" aria-label="Next Slide"></button>
+    `;
+
+    slideIndicatorsNav.setAttribute('aria-label', 'Carousel Slide Controls');
     slideIndicators = document.createElement('ol');
     slideIndicators.classList.add('carousel-slide-indicators');
+    slideIndicatorsNav.prepend(slideNavButtonPrev);
     slideIndicatorsNav.append(slideIndicators);
+    slideIndicatorsNav.append(slideNavButtonNext);
     block.append(slideIndicatorsNav);
 
     const slideNavButtons = document.createElement('div');
@@ -138,6 +153,7 @@ export default async function decorate(block) {
       indicator.classList.add('carousel-slide-indicator');
       indicator.dataset.targetSlide = idx;
       indicator.innerHTML = `<button type="button" aria-label="${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${rows.length}"></button>`;
+      indicator.innerHTML = `<button type="button" aria-label="Show Slide ${idx + 1} of ${rows.length}"></button>`;
       slideIndicators.append(indicator);
     }
     row.remove();
@@ -150,3 +166,4 @@ export default async function decorate(block) {
     bindEvents(block);
   }
 }
+
