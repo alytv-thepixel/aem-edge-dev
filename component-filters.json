@@ -54,7 +54,8 @@
   {
     "id": "responsive-tabs",
     "components": [
-      "responsive-tab"
+      "responsive-tab",
+      "tab"
     ]
   }
 ]
