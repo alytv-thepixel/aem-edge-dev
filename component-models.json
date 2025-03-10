@@ -312,15 +312,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "responsive-tab",
-    "fields": [
-      {
-        "component": "text",
-        "name": "tab-title",
-        "label": "Tab Title"
-      }
-    ]
   }
 ]
