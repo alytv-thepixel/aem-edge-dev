@@ -237,6 +237,21 @@
               }
             }
           }
+        },
+        {
+          "title": "Responsive Tabs",
+          "id": "responsive-tab",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Responsive Tab",
+                  "model": "responsive-tab"
+                }
+              }
+            }
+          }
         }
       ]
     }
