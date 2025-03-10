@@ -16,6 +16,8 @@
       "cards",
       "columns",
       "fragment",
+      "form",
+      "form-embed",
       "carousel",
       "progressbar",
       "hero-heading"
@@ -46,6 +48,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "responsive-tabs",
+    "components": [
+      "responsive-tab"
+    ]
+  },
+  {
+    "id": "responsive-tabs",
+    "components": [
+      "responsive-tab"
     ]
   }
 ]

@@ -1,15 +1,5 @@
 [
   {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "boolean",
-        "name": "breadcrumbs",
-        "label": "Show Breadcrumbs"
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
       {
@@ -320,6 +310,16 @@
             "value": "rsm-blue"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "responsive-tab",
+    "fields": [
+      {
+        "component": "text",
+        "name": "tab-title",
+        "label": "Tab Title"
       }
     ]
   }
