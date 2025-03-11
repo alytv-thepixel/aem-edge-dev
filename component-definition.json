@@ -233,7 +233,7 @@
                 "template": {
                   "name": "Tabs",
                   "model": "tabs",
-                  "filters": "tabs"
+                  "filters": "tab"
                 }
               }
             }
