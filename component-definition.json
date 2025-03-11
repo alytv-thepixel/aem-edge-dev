@@ -233,7 +233,13 @@
                 "template": {
                   "name": "Tabs",
                   "model": "tabs"
-                }
+                },
+                "children": [
+                  {
+                    "id": "tab",
+                    "title": "Tab"
+                  }
+                ]
               }
             }
           }
