@@ -312,5 +312,18 @@
         ]
       }
     ]
+  },
+  {
+    "id": "responsive-tab",
+    "properties": {
+      "title": {
+        "type": "string",
+        "default": "Tab"
+      },
+      "selected": {
+        "type": "boolean",
+        "default": false
+      }
+    }
   }
 ]

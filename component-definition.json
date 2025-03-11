@@ -224,15 +224,31 @@
           }
         },
         {
-          "title": "Custom Section",
-          "id": "custom-section",
+          "title": "Responsive Tabs",
+          "id": "responsive-tabs",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "Custom Section",
-                  "model": "custom-section"
+                  "name": "Responsive Tabs",
+                  "model": "responsive-tabs",
+                  "filter": "responsive-tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Responsive Tab",
+          "id": "responsive-tab",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Responsive Tab",
+                  "model": "responsive-tab"
                 }
               }
             }
