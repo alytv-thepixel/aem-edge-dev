@@ -317,14 +317,9 @@
     "id": "tabs",
     "fields": [
       {
-        "component": "group",
-        "name": "tab-sections",
-        "label": "Tabs",
-        "filter": {
-          "components": [
-            "tab"
-          ]
-        }
+        "component": "text",
+        "name": "tabs-title",
+        "label": "Tabs Title"
       }
     ]
   },
@@ -332,17 +327,9 @@
     "id": "tab",
     "fields": [
       {
-        "component": "group",
-        "name": "tab-content",
-        "label": "Tab Content",
-        "filter": {
-          "components": [
-            "text",
-            "image",
-            "button",
-            "carousel"
-          ]
-        }
+        "component": "text",
+        "name": "tab-title",
+        "label": "Tab Title"
       }
     ]
   }
