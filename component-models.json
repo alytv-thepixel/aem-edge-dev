@@ -312,37 +312,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "responsive-tabs",
-    "parent": "container",
-    "properties": {
-      "mobileDisplay": {
-        "type": "string",
-        "enum": [
-          "tabs",
-          "dropdown"
-        ],
-        "default": "dropdown"
-      }
-    }
-  },
-  {
-    "id": "responsive-tab",
-    "parent": "container",
-    "properties": {
-      "title": {
-        "type": "string",
-        "default": "Tab"
-      },
-      "selected": {
-        "type": "boolean",
-        "default": false
-      }
-    }
-  },
-  {
-    "id": "container",
-    "properties": {}
   }
 ]

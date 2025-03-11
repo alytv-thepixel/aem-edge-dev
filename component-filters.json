@@ -52,26 +52,9 @@
     ]
   },
   {
-    "id": "section",
+    "id": "custom-section",
     "components": [
-      "responsive-tabs"
-    ]
-  },
-  {
-    "id": "responsive-tabs",
-    "components": [
-      "responsive-tab"
-    ]
-  },
-  {
-    "id": "responsive-tab",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "teaser",
-      "list",
-      "column-control"
+      "section"
     ]
   }
 ]

@@ -224,35 +224,16 @@
           }
         },
         {
-          "title": "Responsive Tabs",
-          "id": "responsive-tabs",
+          "title": "Custom Section",
+          "id": "custom-section",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "Responsive Tabs",
-                  "model": "responsive-tabs"
-                },
-                "sling:resourceType": "core/franklin/components/section/v1/section",
-                "className": "responsive-tabs-container"
-              }
-            }
-          }
-        },
-        {
-          "title": "Responsive Tab",
-          "id": "responsive-tab",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Responsive Tab",
-                  "model": "responsive-tab"
-                },
-                "sling:resourceType": "core/franklin/components/section/v1/section",
-                "className": "responsive-tab-item"
+                  "name": "Custom Section",
+                  "model": "custom-section"
+                }
               }
             }
           }
