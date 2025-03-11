@@ -3,7 +3,7 @@
     "id": "main",
     "components": [
       "section",
-      "tabs"
+      "tab"
     ]
   },
   {
@@ -44,21 +44,6 @@
   },
   {
     "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tab"
-    ]
-  },
-  {
-    "id": "tab",
     "components": [
       "text",
       "image",

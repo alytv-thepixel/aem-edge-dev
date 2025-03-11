@@ -314,16 +314,6 @@
     ]
   },
   {
-    "id": "tabs",
-    "fields": [
-      {
-        "component": "text",
-        "name": "tabs-title",
-        "label": "Tabs Title"
-      }
-    ]
-  },
-  {
     "id": "tab",
     "fields": [
       {
