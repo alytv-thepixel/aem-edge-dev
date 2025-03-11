@@ -231,6 +231,7 @@
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
+                  "name": "Responsive Tabs",
                   "model": "responsive-tabs"
                 }
               }
@@ -238,7 +239,7 @@
           }
         },
         {
-          "title": "Responsive Tabs",
+          "title": "Responsive Tab",
           "id": "responsive-tab",
           "plugins": {
             "xwalk": {
@@ -246,22 +247,6 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "model": "section"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Tab",
-          "id": "tab",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Tab",
-                  "model": "tab",
-                  "filter": "section"
                 }
               }
             }
