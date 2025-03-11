@@ -339,7 +339,8 @@
           "components": [
             "text",
             "image",
-            "button"
+            "button",
+            "carousel"
           ]
         }
       }
