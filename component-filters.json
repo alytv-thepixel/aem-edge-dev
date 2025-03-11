@@ -52,14 +52,16 @@
     ]
   },
   {
-    "id": "responsive-tabs",
+    "id": "tabs",
     "components": [
-      "responsive-tab"
+      "tab"
     ]
   },
   {
-    "id": "responsive-tab",
+    "id": "tab",
     "components": [
+      "text",
+      "image",
       "button"
     ]
   }

@@ -224,31 +224,30 @@
           }
         },
         {
-          "title": "Responsive Tabs",
-          "id": "responsive-tabs",
+          "title": "Tabs Section",
+          "id": "tabs",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "Responsive Tabs",
-                  "model": "responsive-tabs",
-                  "filter": "responsive-tabs"
+                  "name": "Tabs",
+                  "model": "tabs"
                 }
               }
             }
           }
         },
         {
-          "title": "Responsive Tab",
-          "id": "responsive-tab",
+          "title": "Tab",
+          "id": "tab",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
-                  "name": "Responsive Tab",
-                  "model": "responsive-tab"
+                  "name": "Tab",
+                  "model": "tab"
                 }
               }
             }

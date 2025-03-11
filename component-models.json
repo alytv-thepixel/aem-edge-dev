@@ -314,16 +314,35 @@
     ]
   },
   {
-    "id": "responsive-tab",
-    "properties": {
-      "title": {
-        "type": "string",
-        "default": "Tab"
-      },
-      "selected": {
-        "type": "boolean",
-        "default": false
+    "id": "tabs",
+    "fields": [
+      {
+        "component": "group",
+        "name": "tab-sections",
+        "label": "Tabs",
+        "filter": {
+          "components": [
+            "tab"
+          ]
+        }
       }
-    }
+    ]
+  },
+  {
+    "id": "tab",
+    "fields": [
+      {
+        "component": "group",
+        "name": "tab-content",
+        "label": "Tab Content",
+        "filter": {
+          "components": [
+            "text",
+            "image",
+            "button"
+          ]
+        }
+      }
+    ]
   }
 ]
