@@ -232,7 +232,8 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name": "Tabs",
-                  "model": "tabs"
+                  "model": "tabs",
+                  "filters": "tabs"
                 }
               }
             }
@@ -247,7 +248,8 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name": "Tab",
-                  "model": "tab"
+                  "model": "tab",
+                  "filters": "tab"
                 }
               }
             }
