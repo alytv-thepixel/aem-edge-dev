@@ -120,7 +120,7 @@
     ]
   },
   {
-    "id": "test-tabs",
+    "id": "tabs",
     "fields": [
       {
         "component": "multiselect",
@@ -330,7 +330,7 @@
     ]
   },
   {
-    "id": "test-tab",
+    "id": "tab",
     "fields": [
       {
         "component": "text",

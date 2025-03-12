@@ -22,17 +22,17 @@
       "carousel",
       "progressbar",
       "hero-heading",
-      "test-tabs"
+      "tabs"
     ]
   },
   {
-    "id": "test-tabs",
+    "id": "tabs",
     "components": [
-      "test-tab"
+      "tab"
     ]
   },
   {
-    "id": "test-tab",
+    "id": "tab",
     "components": [
       "text",
       "image",
