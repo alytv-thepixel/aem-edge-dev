@@ -3,11 +3,35 @@
     "id": "main",
     "components": [
       "section",
-      "tab"
+      "test-tabs"
     ]
   },
   {
     "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "fragment",
+      "form",
+      "form-embed",
+      "carousel",
+      "progressbar",
+      "hero-heading"
+    ]
+  },
+  {
+    "id": "test-tabs",
+    "components": [
+      "test-tab"
+    ]
+  },
+  {
+    "id": "test-tab",
     "components": [
       "text",
       "image",

@@ -75,6 +75,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Test Tabs",
+          "id": "test-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     },
@@ -225,16 +237,14 @@
         },
         {
           "title": "Tab",
-          "id": "tab",
+          "id": "test-tab",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name": "Tab",
-                  "model": "tab",
-                  "filter": "section",
-                  "tab-title": "New Tab"
+                  "model": "test-tab"
                 }
               }
             }

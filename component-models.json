@@ -314,7 +314,7 @@
     ]
   },
   {
-    "id": "tab",
+    "id": "test-tab",
     "fields": [
       {
         "component": "text",
