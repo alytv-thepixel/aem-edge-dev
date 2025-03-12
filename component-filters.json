@@ -2,36 +2,12 @@
   {
     "id": "main",
     "components": [
-      "section"
-    ]
-  },
-  {
-    "id": "section",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "fragment",
-      "form",
-      "form-embed",
-      "carousel",
-      "progressbar",
-      "hero-heading",
-      "tabs"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
+      "section",
       "tab"
     ]
   },
   {
-    "id": "tab",
+    "id": "section",
     "components": [
       "text",
       "image",

@@ -224,29 +224,17 @@
           }
         },
         {
-          "title": "Tabs",
-          "id": "tabs",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "custom/components/tabs/v1/tabs",
-                "template": {
-                  "model": "tabs"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Tab",
           "id": "tab",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "name": "Tab",
-                  "model": "tab"
+                  "model": "tab",
+                  "filter": "section",
+                  "tab-title": "New Tab"
                 }
               }
             }
