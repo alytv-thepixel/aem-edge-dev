@@ -225,7 +225,7 @@
         },
         {
           "title": "Tab",
-          "id": "testtab",
+          "id": "test-tab",
           "plugins": {
             "xwalk": {
               "page": {
