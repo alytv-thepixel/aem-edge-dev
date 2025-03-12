@@ -229,10 +229,9 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "custom/components/tabs/v1/tabs",
                 "template": {
-                  "name": "Tabs",
-                  "filter": "tabs"
+                  "model": "tabs"
                 }
               }
             }
