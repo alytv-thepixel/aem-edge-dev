@@ -314,12 +314,14 @@
     ]
   },
   {
-    "id": "tab",
+    "id": "tabs",
     "fields": [
       {
         "component": "text",
-        "name": "tab-title",
-        "label": "Tab Title"
+        "valueType": "number",
+        "name": "string",
+        "value": "New tab",
+        "label": "Tab title"
       }
     ]
   }

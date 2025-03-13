@@ -239,6 +239,21 @@
               }
             }
           }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "name": "Tabs",
+                  "model": "tab"
+                }
+              }
+            }
+          }
         }
       ]
     }
