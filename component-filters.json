@@ -24,13 +24,7 @@
       "hero-heading",
       "tab"
     ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tab"
-    ]
-  },
+  }
   {
     "id": "cards",
     "components": [
