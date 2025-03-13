@@ -25,12 +25,6 @@
     ]
   },
   {
-    "id": "responsive-tabs",
-    "components": [
-      "responsive-tab"
-    ]
-  },
-  {
     "id": "cards",
     "components": [
       "card"
@@ -55,6 +49,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "responsive-tabs",
+    "components": [
+      "responsive-tab"
     ]
   }
 ]
