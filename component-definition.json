@@ -225,7 +225,7 @@
         },
         {
           "title": "Tabs",
-          "id": "tabs",
+          "id": "responsive-tabs",
           "plugins": {
             "xwalk": {
               "page": {
@@ -240,7 +240,7 @@
         },
         {
           "title": "Tab",
-          "id": "tab",
+          "id": "responsive-tab",
           "plugins": {
             "xwalk": {
               "page": {

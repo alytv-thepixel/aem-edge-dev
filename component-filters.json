@@ -21,13 +21,13 @@
       "carousel",
       "progressbar",
       "hero-heading",
-      "tabs"
+      "responsive-tabs"
     ]
   },
   {
-    "id": "tabs",
+    "id": "responsive-tabs",
     "components": [
-      "tab"
+      "responsive-tab"
     ]
   },
   {
