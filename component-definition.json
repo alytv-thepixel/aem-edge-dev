@@ -75,6 +75,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "name": "Tabs",
+                  "model": "tabs",
+                  "filter": "tabs"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -218,22 +234,6 @@
                   "name": "Progressbar",
                   "model": "progressbar",
                   "progress": "80"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Tabs",
-          "id": "tabs",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Tabs",
-                  "model": "tabs",
-                  "filter": "tabs"
                 }
               }
             }
