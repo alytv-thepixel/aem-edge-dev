@@ -338,7 +338,8 @@
       {
         "component": "aem-content",
         "name": "reference2",
-        "label": "Tab Content 2"
+        "label": "Tab Content 2",
+        "value": "Tab 2"
       }
     ]
   }
