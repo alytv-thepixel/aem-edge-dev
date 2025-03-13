@@ -2,8 +2,7 @@
   {
     "id": "main",
     "components": [
-      "section",
-      "tabs"
+      "section"
     ]
   },
   {
@@ -21,13 +20,7 @@
       "form-embed",
       "carousel",
       "progressbar",
-      "hero-heading",
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tab"
+      "hero-heading"
     ]
   },
   {
@@ -55,6 +48,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "responsive-tabs",
+    "components": [
+      "responsive-tab"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab"
     ]
   }
 ]

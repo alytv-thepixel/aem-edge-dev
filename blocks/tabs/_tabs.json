@@ -24,28 +24,23 @@
           "component": "text",
           "valueType": "string",
           "name": "title1",
-          "label": "Tab Title 1",
-          "value": "Tab 1"
+          "label": "Tab Title",
+          "value": "Tab"
         },
         {
           "component": "aem-content",
           "name": "reference",
-          "label": "Tab Content 1"
-        },
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "title2",
-          "label": "Tab Title 2",
-          "value": "Tab 2"
-        },
-        {
-          "component": "aem-content",
-          "name": "reference2",
-          "label": "Tab Content 2"
+          "label": "Tab Content"
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "tabs",
+      "components": [
+        "tab"
+      ]
+    }
+  ]
 }
