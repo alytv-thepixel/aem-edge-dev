@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "tabs"
     ]
   },
   {
@@ -21,7 +22,12 @@
       "carousel",
       "progressbar",
       "hero-heading",
-      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab"
     ]
   },
   {
