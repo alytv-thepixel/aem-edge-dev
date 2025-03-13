@@ -224,23 +224,6 @@
           }
         },
         {
-          "title": "Tab",
-          "id": "tab",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/section/v1/section",
-                "template": {
-                  "name": "Tab",
-                  "model": "tab",
-                  "filter": "section",
-                  "tab-title": "New Tab"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Tabs",
           "id": "tabs",
           "plugins": {
@@ -249,7 +232,7 @@
                 "resourceType": "core/franklin/components/columns/v1/columns",
                 "template": {
                   "name": "Tabs",
-                  "model": "tab"
+                  "model": "tabs"
                 }
               }
             }
