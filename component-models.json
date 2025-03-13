@@ -319,14 +319,9 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "title1",
+        "name": "title",
         "label": "Tab Title",
         "value": "Tab"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Tab Content"
       }
     ]
   }
