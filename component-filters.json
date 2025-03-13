@@ -25,30 +25,6 @@
     ]
   },
   {
-    "id": "tabs",
-    "components": [
-      "tab"
-    ]
-  },
-  {
-    "id": "tab",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "fragment",
-      "form",
-      "form-embed",
-      "carousel",
-      "progressbar",
-      "hero-heading"
-    ]
-  },
-  {
     "id": "cards",
     "components": [
       "card"

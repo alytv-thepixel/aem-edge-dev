@@ -318,10 +318,27 @@
     "fields": [
       {
         "component": "text",
-        "valueType": "number",
-        "name": "string",
-        "value": "New tab",
-        "label": "Tab title"
+        "valueType": "string",
+        "name": "title1",
+        "label": "Tab Title 1",
+        "value": "Tab 1"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Tab Content 1"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title2",
+        "label": "Tab Title 1",
+        "value": "Tab 1"
+      },
+      {
+        "component": "aem-content",
+        "name": "reference2",
+        "label": "Tab Content 2"
       }
     ]
   }
