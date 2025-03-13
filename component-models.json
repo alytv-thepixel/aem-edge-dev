@@ -322,11 +322,6 @@
         "name": "title1",
         "label": "Tab Title",
         "value": "Tab"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Tab Content"
       }
     ]
   }
