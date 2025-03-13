@@ -26,6 +26,12 @@
     ]
   },
   {
+    "id": "tabs",
+    "components": [
+      "tab"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
