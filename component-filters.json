@@ -20,8 +20,7 @@
       "form-embed",
       "carousel",
       "progressbar",
-      "hero-heading",
-      "tab"
+      "hero-heading"
     ]
   },
   {
@@ -49,6 +48,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "responsive-tabs",
+    "components": [
+      "responsive-tab"
     ]
   }
 ]
