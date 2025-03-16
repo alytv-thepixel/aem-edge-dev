@@ -134,7 +134,7 @@ export default async function decorate(block) {
 
   block.innerHTML = '';
 
-  console.log(isEditor)
+  console.log(block)
 
   if (isEditor) {
     if (ifMoreTabs) {
