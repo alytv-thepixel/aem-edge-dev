@@ -79,13 +79,15 @@ function bind(block) {
 export default async function decorate(block) {
   const maxTabs = 6;
   const ifMoreTabs = block.children.length > maxTabs;
+  const isEditor = block.closest('.section').hasAttribute('data-aue-resource');
+  const existingWarning = block.querySelector('.tabs-warning');
   let index = 1;
   const desktopNav = document.createElement('div');
   desktopNav.classList.add('desktop-nav');
   const tabsWrap = document.createElement('div');
   tabsWrap.classList.add('tabs-wrap');
 
-  const limitedChildren = [...block.children].slice(0, maxTabs);
+  const limitedChildren = isEditor ? [...block.children] : [...block.children].slice(0, maxTabs);
 
   // eslint-disable-next-line no-restricted-syntax
   for (const tabContent of limitedChildren) {
@@ -129,11 +131,6 @@ export default async function decorate(block) {
     index++;
   }
 
-  const isEditor = block.closest('.section').hasAttribute('data-aue-resource');
-  const existingWarning = block.querySelector('.tabs-warning');
-
-  block.innerHTML = '';
-
   if (isEditor) {
     if (ifMoreTabs) {
       if (!existingWarning) {
@@ -145,6 +142,8 @@ export default async function decorate(block) {
     } else if (existingWarning) {
       existingWarning.remove();
     }
+  } else {
+    block.innerHTML = '';
   }
 
   block.append(desktopNav);
