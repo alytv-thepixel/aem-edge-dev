@@ -129,12 +129,10 @@ export default async function decorate(block) {
     index++;
   }
 
-  const isEditor = block.closest('#editor-app');
+  const isEditor = block.closest('.section').hasAttribute('data-aue-resource');
   const existingWarning = block.querySelector('.tabs-warning');
 
   block.innerHTML = '';
-
-  console.log(block.closest('.section').hasAttribute('data-aue-resource'))
 
   if (isEditor) {
     if (ifMoreTabs) {
