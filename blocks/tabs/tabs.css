@@ -73,6 +73,14 @@
     }
 }
 
+.tabs-warning {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f7aea6;
+    color: #921b0e;
+}
+
 @media (width >= 900px) {
     .tabs.block {
         margin: 50px 0;

@@ -224,6 +224,34 @@
           }
         },
         {
+          "title": "Responsive Tabs",
+          "id": "responsive-tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "model": "responsive-tabs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Responsive Tabs",
+          "id": "responsive-tab",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "model": "section"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Tabs",
           "id": "tabs",
           "plugins": {
