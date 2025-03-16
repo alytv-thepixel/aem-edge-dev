@@ -45,7 +45,8 @@ export async function loadFragment(path) {
 
 function bind(block) {
   let index = 0;
-  const tabs = block.querySelectorAll('.tab');
+  const desktopTabs = block.querySelectorAll('.desktop-nav .tab');
+  const mobileTabs = block.querySelectorAll('.tabs-wrap .tab');
   const contents = block.querySelectorAll('.content');
 
   if (contents.length === 0) return;
@@ -53,9 +54,10 @@ function bind(block) {
   function updateActiveSlide(newIndex) {
     index = newIndex < 0 ? contents.length - 1 : newIndex % contents.length;
 
-    // Remove 'active' class from all slides & titles
+    // Remove 'active' class from all tabs & content
     contents.forEach((content, i) => content.classList.toggle('active', i === index));
-    tabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
+    desktopTabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
+    mobileTabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
   }
 
   // Click on Title to Change Slide
@@ -68,19 +70,25 @@ function bind(block) {
 
     e.preventDefault();
 
-    const targetIndex = [...tabs].findIndex((t) => t.getAttribute('data-ref') === ref);
+    const targetIndex = [...desktopTabs].findIndex((t) => t.getAttribute('data-ref') === ref);
     if (targetIndex !== -1) {
       updateActiveSlide(targetIndex);
     }
   });
 }
 export default async function decorate(block) {
+  const maxTabs = 6;
+  const ifMoreTabs = block.children.length > maxTabs;
   let index = 1;
-  const tabs = document.createElement('div');
-  tabs.classList.add('tabs-wrap');
+  const desktopNav = document.createElement('div');
+  desktopNav.classList.add('desktop-nav');
+  const tabsWrap = document.createElement('div');
+  tabsWrap.classList.add('tabs-wrap');
+
+  const limitedChildren = [...block.children].slice(0, maxTabs);
 
   // eslint-disable-next-line no-restricted-syntax
-  for (const tabContent of [...block.children]) {
+  for (const tabContent of limitedChildren) {
     const [tab, contentHolder] = tabContent.children;
     const tabId = `tab-${index}`;
     const link = tabContent.querySelector('a');
@@ -88,12 +96,20 @@ export default async function decorate(block) {
     // eslint-disable-next-line no-await-in-loop
     const fragment = await loadFragment(path);
 
+    const desktopTab = tab.cloneNode(true);
+    desktopTab.classList.add('tab');
+    desktopTab.setAttribute('data-ref', tabId);
+
     tab.classList.add('tab');
     tab.setAttribute('data-ref', tabId);
 
     tabContent.setAttribute('id', tabId);
     tabContent.className = 'content';
     contentHolder.className = 'content-holder';
+
+    desktopNav.append(desktopTab);
+    tabsWrap.append(tab);
+    tabsWrap.append(tabContent);
 
     if (fragment) {
       const fragmentSection = fragment.querySelector(':scope .section');
@@ -104,17 +120,37 @@ export default async function decorate(block) {
     }
 
     if (index === 1) {
+      desktopTab.classList.add('active');
       tab.classList.add('active');
       tabContent.classList.add('active');
     }
 
-    tabs.append(tab);
-    tabs.append(tabContent);
     // eslint-disable-next-line no-plusplus
     index++;
   }
 
-  block.append(tabs);
+  const isEditor = block.closest('#editor-app');
+  const existingWarning = block.querySelector('.tabs-warning');
+
+  block.innerHTML = '';
+
+  console.log(isEditor)
+
+  if (isEditor) {
+    if (ifMoreTabs) {
+      if (!existingWarning) {
+        const warning = document.createElement('p');
+        warning.className = 'tabs-warning';
+        warning.textContent = `Maximum of ${maxTabs} tabs allowed. Excess tabs are ignored.`;
+        block.appendChild(warning);
+      }
+    } else if (existingWarning) {
+      existingWarning.remove();
+    }
+  }
+
+  block.append(desktopNav);
+  block.append(tabsWrap);
 
   bind(block);
 }
