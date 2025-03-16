@@ -134,7 +134,7 @@ export default async function decorate(block) {
 
   block.innerHTML = '';
 
-  console.log(block.closest('.section').hasAttribute(data-aue-resource))
+  console.log(block.closest('.section').hasAttribute('data-aue-resource'))
 
   if (isEditor) {
     if (ifMoreTabs) {
