@@ -21,7 +21,14 @@
       "carousel",
       "progressbar",
       "hero-heading",
+      "tabs",
       "json-table"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab"
     ]
   },
   {
