@@ -329,5 +329,17 @@
         "label": "Tab Content"
       }
     ]
+  },
+  {
+    "id": "json-table",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "label": "Json Link",
+        "description": "Please provide link to json file"
+      }
+    ]
   }
 ]
