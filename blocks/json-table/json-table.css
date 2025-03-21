@@ -1,0 +1,18 @@
+.table-block table {
+    width: 100%;
+    border: 1px solid var(--rsm-mid-grey);
+    border-collapse: collapse;
+}
+
+.table-block table th,
+.table-block table td {
+    padding: 0.5rem;
+    border: 1px solid var(--rsm-mid-grey);
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-block table thead th {
+    background: var(--light-color);
+    font-weight: 700;
+}
