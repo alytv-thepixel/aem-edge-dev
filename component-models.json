@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": "input",
+    "id": "form-input",
     "fields": [
       {
         "component": "text",
