@@ -185,7 +185,8 @@
                   "model": "form-input",
                   "Name": "testFormInput",
                   "Type": "",
-                  "Label": "Input Field"
+                  "Label": "Input Field",
+                  "Mandatory": false
                 }
               }
             }
