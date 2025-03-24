@@ -200,21 +200,18 @@
     "id": "input",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
         "valueType": "string",
-        "name": "Name",
-        "label": "Field Name",
-        "required": true,
-        "value": ""
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "Type",
-        "label": "Field Type",
-        "required": false,
+        "component": "richtext",
+        "name": "text",
         "value": "",
-        "hidden": true
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },
