@@ -193,15 +193,6 @@
         "label": "Field Name",
         "required": true,
         "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "Type",
-        "label": "Field Type",
-        "required": false,
-        "value": "",
-        "hidden": true
       }
     ]
   },
