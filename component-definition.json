@@ -167,7 +167,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "RSM Form",
-                  "model": "rsm-form"
+                  "filter": "rsm-form"
                 }
               }
             }
