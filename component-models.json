@@ -191,7 +191,30 @@
         "valueType": "string",
         "name": "submitUrl",
         "label": "Submit Url",
+        "required": true,
         "value": ""
+      }
+    ]
+  },
+  {
+    "id": "input",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Name",
+        "label": "Field Name",
+        "required": true,
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Type",
+        "label": "Field Type",
+        "required": false,
+        "value": "",
+        "hidden": true
       }
     ]
   },
