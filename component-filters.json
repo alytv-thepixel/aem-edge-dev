@@ -16,7 +16,7 @@
       "cards",
       "columns",
       "fragment",
-      "form",
+      "rsm-form",
       "carousel",
       "progressbar",
       "hero-heading"
@@ -50,9 +50,9 @@
     ]
   },
   {
-    "id": "form",
+    "id": "rsm-form",
     "components": [
-      "input"
+      "form-input"
     ]
   }
 ]

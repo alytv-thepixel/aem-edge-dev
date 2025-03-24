@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": "form",
+    "id": "rsm-form",
     "fields": [
       {
         "component": "text",
@@ -196,7 +196,7 @@
     ]
   },
   {
-    "id": "input",
+    "id": "form-input",
     "fields": [
       {
         "component": "reference",
