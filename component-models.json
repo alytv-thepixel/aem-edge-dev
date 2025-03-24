@@ -1,15 +1,5 @@
 [
   {
-    "id": "page-metadata",
-    "fields": [
-      {
-        "component": "boolean",
-        "name": "breadcrumbs",
-        "label": "Show Breadcrumbs"
-      }
-    ]
-  },
-  {
     "id": "image",
     "fields": [
       {
@@ -190,6 +180,18 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "submitUrl",
+        "label": "Submit Url",
+        "value": ""
       }
     ]
   },
