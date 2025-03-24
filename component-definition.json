@@ -182,7 +182,9 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Input",
-                  "model": "form-input"
+                  "model": "form-input",
+                  "Name": "formInput",
+                  "Type": ""
                 }
               }
             }
