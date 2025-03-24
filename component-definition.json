@@ -183,8 +183,8 @@
                 "template": {
                   "name": "Input",
                   "model": "form-input",
-                  "Name": "TEST",
-                  "Type": "123"
+                  "Name": "testFormInput",
+                  "Type": ""
                 }
               }
             }
