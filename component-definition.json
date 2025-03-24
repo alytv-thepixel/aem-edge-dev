@@ -184,7 +184,8 @@
                   "name": "Input",
                   "model": "form-input",
                   "Name": "testFormInput",
-                  "Type": ""
+                  "Type": "",
+                  "Label": "Input Field"
                 }
               }
             }

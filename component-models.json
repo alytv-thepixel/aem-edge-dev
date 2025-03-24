@@ -199,6 +199,21 @@
         "name": "Type",
         "label": "Field Type",
         "hidden": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "Label",
+        "label": "Field Label",
+        "required": true,
+        "value": ""
+      },
+      {
+        "component": "text",
+        "name": "Mandatory",
+        "label": "Is Required?",
+        "valueType": "boolean",
+        "default": false
       }
     ]
   },
