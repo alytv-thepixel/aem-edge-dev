@@ -49,5 +49,11 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "form",
+    "components": [
+      "input"
+    ]
   }
 ]
