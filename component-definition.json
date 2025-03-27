@@ -265,7 +265,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Input",
+                  "name": "Checkbox",
                   "model": "form-checkbox",
                   "Name": "defaultFormCheckbox",
                   "Type": "checkbox",
