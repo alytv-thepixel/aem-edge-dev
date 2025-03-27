@@ -258,6 +258,25 @@
           }
         },
         {
+          "title": "Checkbox",
+          "id": "form-checkbox",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Input",
+                  "model": "form-checkbox",
+                  "Name": "defaultFormCheckbox",
+                  "Type": "checkbox",
+                  "Label": "Checkbox",
+                  "Mandatory": false
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Select",
           "id": "form-select",
           "plugins": {

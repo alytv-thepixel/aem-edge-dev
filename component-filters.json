@@ -54,7 +54,8 @@
     "components": [
       "form-input",
       "form-submit",
-      "form-select"
+      "form-select",
+      "form-checkbox"
     ]
   }
 ]
