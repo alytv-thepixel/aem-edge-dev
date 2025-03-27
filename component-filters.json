@@ -53,7 +53,8 @@
     "id": "rsm-form",
     "components": [
       "form-input",
-      "form-submit"
+      "form-submit",
+      "form-select"
     ]
   }
 ]
