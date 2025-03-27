@@ -248,10 +248,30 @@
                 "template": {
                   "name": "Input",
                   "model": "form-input",
-                  "Name": "testFormInput",
+                  "Name": "defaultFormInput",
                   "Type": "",
                   "Label": "Input Field",
                   "Mandatory": false
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Select",
+          "id": "form-select",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Select",
+                  "model": "form-select",
+                  "Name": "defaultFormSelect",
+                  "Type": "select",
+                  "Label": "Select Field",
+                  "Mandatory": false,
+                  "Options": ""
                 }
               }
             }
