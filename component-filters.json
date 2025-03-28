@@ -55,7 +55,9 @@
       "form-input",
       "form-submit",
       "form-select",
-      "form-checkbox"
+      "form-checkbox",
+      "form-radio",
+      "form-text-area"
     ]
   }
 ]

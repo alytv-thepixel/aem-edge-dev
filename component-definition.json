@@ -239,6 +239,25 @@
           }
         },
         {
+          "title": "Text Area",
+          "id": "form-text-area",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Text Area",
+                  "model": "form-text-area",
+                  "Name": "defaultFormInput",
+                  "Type": "text-area",
+                  "Label": "Text Area",
+                  "Mandatory": false
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Input",
           "id": "form-input",
           "plugins": {
@@ -270,6 +289,25 @@
                   "Name": "defaultFormCheckbox",
                   "Type": "checkbox",
                   "Label": "Checkbox",
+                  "Mandatory": false
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Radio",
+          "id": "form-radio",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Radio",
+                  "model": "form-radio",
+                  "Name": "defaultFormRadio",
+                  "Type": "radio",
+                  "Label": "Radio",
                   "Mandatory": false
                 }
               }
