@@ -201,8 +201,16 @@ const createToggle = (fd) => {
 
 const createCheckbox = (fd) => {
   const { field, fieldWrapper } = createInput(fd);
+  const checkboxWrapper = document.createElement('div');
+  const checkMark = document.createElement('span');
+  checkMark.classList.add('checkmark');
   if (!field.value) field.value = 'checked';
   fieldWrapper.classList.add('selection-wrapper');
+  checkboxWrapper.classList.add('checkbox-wrapper');
+  checkboxWrapper.appendChild(field.cloneNode(true));
+  checkboxWrapper.appendChild(checkMark);
+  // checkboxWrapper.classList.add('custom-checkbox');
+  field.replaceWith(checkboxWrapper);
 
   return { field, fieldWrapper };
 };
@@ -216,20 +224,19 @@ const createRadio = (fd) => {
 };
 
 const FIELD_CREATOR_FUNCTIONS = {
-  select: createSelect,
+  select: createSelect,//+
   heading: createHeading,
   plaintext: createPlaintext,
   'text-area': createTextArea,
   toggle: createToggle,
-  submit: createSubmit,
+  submit: createSubmit,//+
   confirmation: createConfirmation,
   fieldset: createFieldset,
-  checkbox: createCheckbox,
-  radio: createRadio,
+  checkbox: createCheckbox,//+
+  radio: createRadio,//+
 };
 
 export default async function createField(fd, form) {
-  debugger;
   fd.Id = fd.Id || generateFieldId(fd);
   const type = fd.Type.toLowerCase();
   const createFieldFunc = FIELD_CREATOR_FUNCTIONS[type] || createInput;
