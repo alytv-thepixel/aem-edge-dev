@@ -244,7 +244,7 @@ export default async function createField(fd, form) {
   const createFieldFunc = FIELD_CREATOR_FUNCTIONS[type] || createInput;
   const fieldElements = await createFieldFunc(fd, form);
 
-  if (fieldElements.hasOwnProperty('field')) {
+  if (fieldElements.hasOwnProperty('field') && type !== 'checkbox') {
     moveInstrumentation(fd, fieldElements.field);
   }
 
