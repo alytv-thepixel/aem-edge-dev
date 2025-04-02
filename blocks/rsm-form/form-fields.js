@@ -210,7 +210,7 @@ const createCheckbox = (fd) => {
   checkboxWrapper.classList.add('checkbox-wrapper');
   checkboxWrapper.appendChild(field.cloneNode(true));
   checkboxWrapper.appendChild(checkMark);
-  // checkboxWrapper.classList.add('custom-checkbox');
+  moveInstrumentation(field, checkboxWrapper);
   field.replaceWith(checkboxWrapper);
 
   return { field, fieldWrapper };
