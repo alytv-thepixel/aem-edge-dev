@@ -204,13 +204,14 @@ const createCheckbox = (fd) => {
   const { field, fieldWrapper } = createInput(fd);
   const checkboxWrapper = document.createElement('div');
   const checkMark = document.createElement('span');
+  const fieldClone = field.cloneNode(true);
+  moveInstrumentation(field, fieldClone);
   checkMark.classList.add('checkmark');
   if (!field.value) field.value = 'checked';
   fieldWrapper.classList.add('selection-wrapper');
   checkboxWrapper.classList.add('checkbox-wrapper');
-  checkboxWrapper.appendChild(field.cloneNode(true));
+  checkboxWrapper.appendChild(fieldClone);
   checkboxWrapper.appendChild(checkMark);
-  moveInstrumentation(field, checkboxWrapper);
   field.replaceWith(checkboxWrapper);
 
   return { field, fieldWrapper };
