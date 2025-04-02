@@ -1,4 +1,5 @@
 import { toClassName } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 function createFieldWrapper(fd) {
   const fieldWrapper = document.createElement('div');
@@ -241,6 +242,10 @@ export default async function createField(fd, form) {
   const type = fd.Type.toLowerCase();
   const createFieldFunc = FIELD_CREATOR_FUNCTIONS[type] || createInput;
   const fieldElements = await createFieldFunc(fd, form);
+
+  if (fieldElements.hasOwnProperty('field')) {
+    moveInstrumentation(fd, fieldElements.field);
+  }
 
   return fieldElements.fieldWrapper;
 }
