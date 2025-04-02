@@ -1,4 +1,5 @@
 import createField from './form-fields.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 async function createForm(formHref, submitHref, block) {
   // const { pathname } = new URL(formHref);
@@ -113,6 +114,7 @@ function prepareFormFields(block) {
     // fieldElement.Value = value?.textContent ?? '';
     fieldElement.Value = '';
     fieldElement.Options = options?.textContent ?? '';
+    moveInstrumentation(field, fieldElement);
     field.replaceWith(fieldElement);
   }
 }
